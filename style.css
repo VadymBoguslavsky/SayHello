@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "ubuntu bold";
+  src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ubuntu light";
+  src: url(fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+  font-family: "ubuntu regular";
+  src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+.wrapper {
+  text-align: center
+}
+
+.header__info {
+  color: #a5a5a5;
+  font-size: 14px;
+  font-family: "ubuntu bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.header__wrapper {
+  padding-top: 60px;
+}
+
+.header__text {
+  font-size: 60px;
+  font-family: "ubuntu light";
+  color: #4c4c4c;
+  margin-top: 20px;
+}
+
+.header__text span {
+  color: #1abc9c;
+}
+
+.form {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.input__wrapper {
+  max-width: 620px;
+  margin-top: 100px;
+  text-align: left;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "ubuntu regular", sans-serif;
+  padding: 20px 15px;
+  border: 2px solid #cccccc;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #a9aaad;
+}
+
+.form__name,
+.form__email {
+  width: 47.2%;
+}
+
+.form__name {
+  margin-right: 30px;
+}
+
+.form__subject {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form__message {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  margin-top: 32px;
+}
+
+.form__btn {
+  background-color: #1abc9c;
+  color: white;
+  padding: 22px 44px;
+  font-size: 16px;
+  font-family: "ubuntu regular", sans-serif;
+  margin-top: 70px;
+}
+
+.contact__info {
+  max-width: 1350px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 45px 200px;
+  box-sizing: border-box;
+}
+
+.contact__text {
+  margin-top: 30px;
+  font-family: "ubuntu bold", sans-serif;
+  font-weight: 600;
+  color: #4c4c4c;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact__info a {
+  text-decoration: none;
+  color: #1abc9c;
+  font-family: "ubuntu light", sans-serif;
+  font-size: 16px;
+}
+
+.times__work {
+  font-family: "ubuntu light", sans-serif;
+  font-size: 16px;
+  color: #818181;
+}
+
+.times,
+.chat {
+  position: relative;
+}
+
+.times::before,
+.chat::before {
+  content: "";
+  height: 120px;
+  width: 2px;
+  background-color: #818181;
+  position: absolute;
+  left: -70px;
+}
+
+.footer {
+  background-color: #1abc9c;
+}
+
+.footer__text {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer__upper-text {
+  font-family: "ubuntu light", sans-serif;
+  font-size: 43px;
+}
+
+.footer__upper-text span {
+  font-family: "ubuntu bold", sans-serif;
+}
+
+.footer__bottom-text {
+  font-family: "ubuntu light", sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 1262px) and (min-width:1075px) {
+
+  .times::before,
+  .chat::before {
+    content: "";
+    height: 120px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    left: -25%;
+  }
+
+  .form {
+    text-align: center
+  }
+
+  .input__wrapper {
+    margin: 100px auto 0 auto;
+    text-align: center;
+  }
+
+  .footer__text {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1074px) and (min-width:730px) {
+  .form {
+    text-align: center
+  }
+
+  .input__wrapper {
+    margin: 100px auto 0 auto;
+    text-align: center;
+  }
+
+  .footer__text {
+    padding-left: 20px;
+  }
+
+  .times::before,
+  .chat::before {
+    content: "";
+    height: 120px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    left: -25%;
+  }
+
+  .contact__info {
+    padding: 45px 25px;
+  }
+}
+
+@media (max-width: 729px) and (min-width:652px) {
+  .contact__info {
+    padding: 45px 25px;
+  }
+
+  .times::before,
+  .chat::before {
+    content: "";
+    height: 120px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    left: -18%;
+  }
+
+  .form {
+    text-align: center
+  }
+
+  .input__wrapper {
+    margin: 100px auto 0 auto;
+    text-align: center;
+  }
+
+  .footer__text {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 651px) and (min-width:300px) {
+  .form {
+    text-align: center
+  }
+
+  .input__wrapper {
+    margin: 100px auto 0 auto;
+    text-align: center;
+  }
+
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+  }
+
+  .times::before,
+  .chat::before {
+    content: "";
+    height: 2px;
+    width: 120px;
+    background-color: #818181;
+  }
+
+  .times {
+    margin: 45px;
+  }
+
+  .times::before {
+    position: absolute;
+    left: 5%;
+    top: -20px
+  }
+
+  .chat::before {
+    position: absolute;
+    left: 15%;
+    top: -20px
+  }
+}
+
+@media (max-width: 610px) and (min-width:300px) {
+
+  .form__name,
+  .form__email {
+    width: 100%;
+  }
+
+  .form__name {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
