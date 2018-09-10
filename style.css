@@ -73,10 +73,12 @@ input::placeholder {
   padding: 100px 0 135px 25px;
   max-width: 450px;
 }
-.frame__map{
+
+.frame__map {
   height: 100%;
   width: 450px;
 }
+
 .form__name,
 .form__email {
   width: 47.2%;
@@ -141,19 +143,27 @@ input::placeholder {
   color: #818181;
 }
 
-.times,
-.chat {
+.times {
   position: relative;
 }
 
-.times::before,
-.chat::before {
+.times::before {
   content: "";
   height: 130px;
   width: 2px;
   background-color: #818181;
   position: absolute;
-  left: -70px;
+  left: -45%;
+}
+
+.times::after {
+  content: "";
+  height: 130px;
+  width: 2px;
+  background-color: #818181;
+  position: absolute;
+  right: -45%;
+  top: 0;
 }
 
 .footer {
@@ -201,14 +211,24 @@ input::placeholder {
 
 @media (max-width: 1262px) and (min-width:1075px) {
 
-  .times::before,
-  .chat::before {
+
+  .times::before {
     content: "";
     height: 130px;
     width: 2px;
     background-color: #818181;
     position: absolute;
-    left: -25%;
+    left: -45%;
+  }
+  
+  .times::after {
+    content: "";
+    height: 130px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    right: -45%;
+    top: 0;
   }
 
   .form {
@@ -222,6 +242,27 @@ input::placeholder {
 
   .footer__text {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 1074px) and (min-width:820px) {
+  .times::before {
+    content: "";
+    height: 130px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    left: -45%;
+  }
+  
+  .times::after {
+    content: "";
+    height: 130px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    right: -45%;
+    top: 0;
   }
 }
 
@@ -239,14 +280,23 @@ input::placeholder {
     padding-left: 20px;
   }
 
-  .times::before,
-  .chat::before {
+  .times::before {
     content: "";
-    height: 128px;
+    height: 130px;
     width: 2px;
     background-color: #818181;
     position: absolute;
-    left: -25%;
+    left: -45%;
+  }
+  
+  .times::after {
+    content: "";
+    height: 130px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    right: -45%;
+    top: 0;
   }
 
   .contact__info {
@@ -259,14 +309,23 @@ input::placeholder {
     padding: 45px 25px;
   }
 
-  .times::before,
-  .chat::before {
+  .times::before {
     content: "";
-    height: 120px;
+    height: 130px;
     width: 2px;
     background-color: #818181;
     position: absolute;
-    left: -18%;
+    left: -25%;
+  }
+  
+  .times::after {
+    content: "";
+    height: 130px;
+    width: 2px;
+    background-color: #818181;
+    position: absolute;
+    right: -25%;
+    top: 0;
   }
 
   .form {
@@ -283,7 +342,7 @@ input::placeholder {
   }
 }
 
-@media (max-width: 651px) and (min-width:300px) {
+@media (max-width: 700px) and (min-width:300px) {
   .form {
     text-align: center;
   }
@@ -304,33 +363,34 @@ input::placeholder {
     align-items: center;
     padding: 45px 20px;
   }
-
-  .times::before,
-  .chat::before {
+  .times::before {
     content: "";
     height: 2px;
-    width: 120px;
+    width: 130px;
     background-color: #818181;
+    position: absolute;
+    left: 1%;
+    top: -20px;
+  }
+  
+  .times::after {
+    content: "";
+    height: 2px;
+    width: 130px;
+    background-color: #818181;
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+    top: 150px;
   }
 
   .times {
     margin: 45px;
   }
 
-  .times::before {
-    position: absolute;
-    left: 5%;
-    top: -20px;
-  }
-
-  .chat::before {
-    position: absolute;
-    left: 15%;
-    top: -20px;
-  }
 }
 
-@media (max-width: 610px) and (min-width:300px) {
+@media (max-width: 800px) and (min-width:300px) {
 
   .form__name,
   .form__email {
